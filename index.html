@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      button {
+        margin: 2rem;
+        padding: 1rem 2rem 1rem 2rem;
+        background-color: rgb(197, 195, 195);
+        color: rgb(129, 125, 125);
+        border: none;
+        background: #eacda3; /* fallback for old browsers */
+        border-radius: 35px;
+      }
+
+      button:hover {
+        background-color: rgb(197, 195, 195);
+      }
+    </style>
+    <title>Lamp</title>
+  </head>
+  <body>
+    <button onclick="document.getElementById('lamp').src='./img/lamp_active.gif'">Turn On</button>
+    <img id="lamp" src="./img/lamp_nonw.gif" width="100px" />
+    <button onclick="document.getElementById('lamp').src='./img/lamp_nonw.gif'">Turn Off</button>
+  </body>
+</html>
